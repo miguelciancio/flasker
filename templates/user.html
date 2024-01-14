@@ -1,3 +1,7 @@
-<h1>Hello {{ user_name }}</h1>
+{% extends 'base.html' %}
 
-<p><strong>Cheers !!!!</strong></p>
+{%  block content %}
+    <h1>Hello {{ user_name|title }}</h1>
+
+    <p><strong>Cheers !!!!</strong></p>
+{%  endblock %}
